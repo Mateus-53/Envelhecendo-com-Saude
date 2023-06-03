@@ -1,0 +1,7 @@
+.lateralNav {
+   background: var(--bg-200);
+   width: 17rem;
+   height: 100vh;
+   overflow-y: scroll;
+   white-space: nowrap;
+}
