@@ -4,4 +4,5 @@
    height: 100vh;
    overflow-y: scroll;
    white-space: nowrap;
+   box-shadow: 1px 1px 10px #d0d0d0;
 }
