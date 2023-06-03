@@ -1,15 +1,17 @@
 :root {
-   --main-color: #83ca1a;
-   --secundary-color: none;
-   --bg-color: #e6efd5;
-   --text-color: #000;
+   --primary-100: #81c784;
+   --primary-200: #64a968;
+   --primary-300: #20672c;
+   --accent-100: #4caf50;
+   --accent-200: #005100;
+   --text-100: #212121;
+   --text-200: #484848;
+   --bg-100: #e8f5e9;
+   --bg-200: #deebdf;
+   --bg-300: #b6c2b7;
 }
 
 body {
-   background: var(--bg-color);
-   color: var(--text-color);
-}
-a {
-   text-decoration: none;
-   color: var(--main-color);
+   background: var(--bg-100);
+   color: var(--text-100);
 }
