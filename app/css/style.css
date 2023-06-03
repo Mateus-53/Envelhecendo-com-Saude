@@ -1,22 +1,35 @@
 :root {
-   --primary-100: #81c784;
-   --primary-200: #64a968;
-   --primary-300: #20672c;
-   --accent-100: #4caf50;
-   --accent-200: #005100;
-   --text-100: #212121;
-   --text-200: #484848;
-   --bg-100: #e8f5e9;
-   --bg-200: #deebdf;
-   --bg-300: #b6c2b7;
+	--primary-100: #81c784;
+	--primary-200: #64a968;
+	--primary-300: #20672c;
+	--accent-100: #4caf50;
+	--accent-200: #005100;
+	--text-100: #212121;
+	--text-200: #484848;
+	--bg-100: #e8f5e9;
+	--bg-200: #deebdf;
+	--bg-300: #b6c2b7;
 }
 
 body {
-   background: var(--bg-100);
-   color: var(--text-100);
+	scroll-behavior: smooth;
+	background: var(--bg-100);
 }
 
-a {
-   text-decoration: none;
-   color: var(--primary-300);
+main {
+	margin-left: 17rem;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.content h1 {
+	font-size: 3rem;
+}
+
+.content section p {
+	font-size: 1.2rem;
 }
