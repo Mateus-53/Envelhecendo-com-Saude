@@ -1,6 +1,15 @@
 :root {
-   --main-color: none;
+   --main-color: #83ca1a;
    --secundary-color: none;
-   --bg-color: none;
-   --text-color: none;
+   --bg-color: #e6efd5;
+   --text-color: #000;
+}
+
+body {
+   background: var(--bg-color);
+   color: var(--text-color);
+}
+a {
+   text-decoration: none;
+   color: var(--main-color);
 }
