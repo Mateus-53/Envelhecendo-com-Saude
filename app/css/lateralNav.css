@@ -4,6 +4,8 @@
 	justify-content: center;
 	background: var(--bg-200);
 	position: fixed;
+	top: 0;
+	left: 0;
 	width: 17rem;
 	height: 100vh;
 	box-shadow: 1px 1px 10px #d0d0d0;
