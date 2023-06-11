@@ -6,14 +6,16 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width,  initial-scale=1.0">
    <title>Velhice Website</title>
-   
+   <!--Google Fonts-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap" rel="stylesheet">
    <!--Bootstrap CDN-->
    <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" type="text/css"
       media="all" />
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
       type="text/css" media="all" />
-   
    <!--Styles-->
    <link rel="stylesheet" href="./app/css/style.css" type="text/css" media="all" />
    <link rel="stylesheet" href="./app/css/lateralNav.css" type="text/css" media="all" />
@@ -27,7 +29,7 @@
          LOGO
       </a>
       <i class="bi bi-list openMenu"></i>
-      
+
       <nav class="lateralNav container">
          <!--Itens do menu-->
          <ul class="navItens list-unstyled">
@@ -59,15 +61,23 @@
          </ul>
       </nav>
    </header>
-   <div class="scrollIndex"></div>
    <!--Final do menu lateral-->
-   
+   <div class="scrollIndex"></div>
+
    <!--Conteudo principal-->
    <main>
       <!--Espaçamento do header-->
       <div class="content container">
-         <h1 class="text-primary">Envelhecendo com Saúde</h1>
-         <section id="1">
+         <section class="introduction sections">
+            <div class="title">
+               <h1 class="text-primary">Envelhecendo com Saúde</h1>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium consequatur quia esse cumque
+                  repellendus aperiam molestiae dolores, illum accusamus neque minus ipsum cupiditate sed tempore ipsa,
+                  asperiores error id natus!</p>
+            </div>
+            <img src="app/img/undraw_medicine_b-1-ol.svg" alt="Two doctors">
+         </section>
+         <section class="sections" id="1">
             <h2>Velhice x Envelhecimento</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ullam, distinctio rerum iusto
                repellendus rem maxime blanditiis quam natus voluptatum minus illo. Expedita, id officiis totam excepturi
@@ -75,23 +85,26 @@
                corrupti sunt, perferendis modi sit ut necessitatibus adipisci dolores accusamus in esse, dolorem earum
                dolor, facere eveniet consectetur hic minima?</p>
          </section>
-         <section id="2">
+         <section class="sections" id="2">
             <h2>O que é velhice?</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ullam, distinctio rerum iusto
                repellendus rem maxime blanditiis quam natus voluptatum minus illo. Expedita, id officiis totam excepturi
                hic consectetur quibusdam?</p>
          </section>
-         <section id="3">
+         <section class="sections" id="3">
             <h2>Mateus Ferreira</h2>
-            <p>Mateus Ferreira da Costa Junior, ou simplesmente Mateus Ferreira, é um programador e analista de sistemas brasileiro que ficou conhecido por criar um site sobre velhice. Mateus começou seu caminho na programacão ao entrar no ensino médio integrado a um curso de informát.... <a class="" href="https://pt.wikipedia.org">Ler mais em Wikipedia</a></p>
+            <p>Mateus Ferreira da Costa Junior, ou simplesmente Mateus Ferreira, é um programador e analista de sistemas
+               brasileiro que ficou conhecido por criar um site sobre velhice. Mateus começou seu caminho na programacão
+               ao entrar no ensino médio integrado a um curso de informát.... <a class=""
+                  href="https://pt.wikipedia.org">Ler mais em Wikipedia</a></p>
          </section>
-         <section id="4">
+         <section class="sections" id="4">
             <h2>O que é velhice?</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ullam, distinctio rerum iusto
                repellendus rem maxime blanditiis quam natus voluptatum minus illo. Expedita, id officiis totam excepturi
                hic consectetur quibusdam?</p>
          </section>
-         <section id="5">
+         <section class="sections" id="5">
             <h2>O que é velhice?</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ullam, distinctio rerum iusto
                repellendus rem maxime blanditiis quam natus voluptatum minus illo. Expedita, id officiis totam excepturi
@@ -100,16 +113,16 @@
       </div>
    </main>
    <!--Final da tag main-->
-   
+
    <!--Sombra ao abrir o menu lateral-->
    <div class="overlay"></div>
    <div class="headerRoot"></div>
-   
-   
    <!--scrips links-->
    <script src="./app/js/menuLateral.js"></script>
    <script src="./app/js/scrollIndex.js"></script>
-   <script src="./app/js/script.js"></script>
+   <!--Scroll Reveal-->
+   <script src="https://unpkg.com/scrollreveal"></script>
+   <script src="./app/js/scrollReveal.js"></script>
 </body>
 
 </html>

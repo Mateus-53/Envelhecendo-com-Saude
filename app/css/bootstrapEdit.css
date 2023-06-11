@@ -1,10 +1,13 @@
 .text-primary {
-   color: var(--primary-100) !important;
+	color: var(--primary-200) !important;
 }
-h1 {
-   font-size: 2.1rem !important;
-   font-weight: 700;
+
+.content .introduction .title h1 {
+	font-size: 2.5rem !important;
+	font-weight: 700;
 }
-h2 {
-   font-weight: 600 !important;
+
+.content section h2 {
+   font-size: 1.8rem;
+	font-weight: 600 !important;
 }

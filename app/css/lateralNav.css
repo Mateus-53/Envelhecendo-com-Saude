@@ -1,120 +1,120 @@
 /*Estilo do header inicio*/
 .header,
 .headerRoot {
-   position: fixed;
-   top: 0;
-   left: 0;
-   width: 100vw;
-   height: 60px;
-   display: flex;
-   justify-content: space-between;
-   background: none;
-   align-items: center;
-   box-shadow: none;
-   z-index: 90;
-   transition: all 0.15s ease;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 60px;
+	display: flex;
+	justify-content: space-between;
+	background: none;
+	align-items: center;
+	box-shadow: none;
+	z-index: 90;
+	transition: all 0.15s ease;
 }
 .header.opened {
-   background: rgb(222, 235, 223, 0);
-   box-shadow: none;
+	background: rgb(222, 235, 223, 0);
+	box-shadow: none;
 }
 .headerRoot {
-   display: none;
-   z-index: 50;
-   background: rgb(222, 235, 223, 1) !important;
+	display: none;
+	z-index: 50;
+	background: rgb(222, 235, 223, 1) !important;
 }
 
 .logo {
-   margin-left: 15px;
+	margin-left: 15px;
 }
 
 .openMenu {
-   font-size: 2rem;
-   margin-right: 5px;
-   padding: 10px;
-   display: none;
-}
-
-@media screen and (max-width: 768px) {
-   .header {
-      box-shadow: 1px 1px 10px #d0d0d0;
-      background: var(--bg-200);
-   }
-
-   .headerRoot {
-      display: block;
-   }
-
-   .openMenu {
-      display: block;
-   }
+	font-size: 2rem;
+	margin-right: 5px;
+	padding: 10px;
+	display: none;
 }
 /*Estilo do header final*/
 
 /*Começo da barra de scroll*/
 .scrollIndex {
-   position: fixed;
-   bottom: 1px;
-   margin-left: 17.01rem;
-   height: 5px;
-   width: 1px;
-   z-index: 100;
-   background: var(--primary-100);
-}
-
-@media screen and (max-width: 768px) {
-   .scrollIndex {
-      top: 55px;
-      height: 5px;
-      margin-left: 0;
-   }
+	position: fixed;
+	bottom: 1px;
+	margin-left: 17rem;
+	height: 5px;
+	width: 1px;
+	z-index: 100;
+	background: var(--primary-200);
 }
 
 /*Estilo do menu lateral inicio*/
 .lateralNav {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   background: var(--bg-200);
-   position: fixed;
-   top: 0;
-   left: 0;
-   width: 17rem;
-   height: 100vh;
-   box-shadow: 1px 1px 10px #d0d0d0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background: var(--bg-200);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 17rem;
+	height: 100vh;
+	box-shadow: 1px 1px 10px #d0d0d0;
 }
 
 /*.lateralNav nav {
 }*/
-
 .lateralNav ul {
-   display: flex;
-   flex-direction: column;
-   gap: 1rem;
-   margin-left: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	margin-left: 10px;
 }
 
 .lateralNav a {
-   font-size: 1.2rem;
-   text-decoration: none;
-   color: var(--text-200);
+	color: var(--text-200);
+	font-size: 1.2rem;
+	text-decoration: none;
+	transition: all .3s ease-in-out;
+
 }
 
 .lateralNav a:is(:hover, :focus, :active) {
-   color: var(--text-100);
-}
-@media screen and (max-width: 768px) {
-   .lateralNav {
-      left: -100%;
-      box-shadow: none;
-      transition: all 0.35s ease;
-      width: 15rem;
-   }
-   .lateralNav.opened {
-      left: 0;
-   }
-   .lateralNav.opened ~ .header {
-      background: red;
-   }
+	color: var(--text-100);
 }
 /*final do estilo do menu lateral */
+
+@media screen and (max-width: 768px) {
+	.header {
+		box-shadow: 1px 1px 10px #d0d0d0;
+		background: var(--bg-200);
+	}
+
+	.headerRoot {
+		display: block;
+	}
+
+	.openMenu {
+		display: block;
+	}
+
+	.scrollIndex {
+		top: 55px;
+		height: 5px;
+		margin-left: 0;
+	}
+
+	.lateralNav {
+		left: -100%;
+		box-shadow: none;
+		transition: all 0.35s ease;
+		width: 15rem;
+	}
+
+	.lateralNav.opened {
+		left: 0;
+	}
+
+	.lateralNav.opened ~ .header {
+		background: red;
+	}
+}

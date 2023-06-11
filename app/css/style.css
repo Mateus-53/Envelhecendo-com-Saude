@@ -1,62 +1,90 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap");
-
 :root {
-   --primary-100: #81c784;
-   --primary-200: #64a968;
-   --primary-300: #20672c;
-   --accent-100: #4caf50;
-   --accent-200: #005100;
-   --text-100: #212121;
-   --text-200: #484848;
-   --bg-100: #e8f5e9;
-   --bg-200: #deebdf;
-   --bg-300: #b6c2b7;
+	--primary-100: #81c784;
+	--primary-200: #64a968;
+	--primary-300: #20672c;
+	--accent-100: #4caf50;
+	--accent-200: #005100;
+	--text-100: #212121;
+	--text-200: #484848;
+	--bg-100: #e8f5e9;
+	--bg-200: #deebdf;
+	--bg-300: #b6c2b7;
 }
 
 body {
-   scroll-behavior: smooth;
-   background: var(--bg-100);
-   font-family: "Rubik", sans-serif;
+	scroll-behavior: smooth;
+	background: var(--bg-100);
+	font-family: "Rubik", sans-serif;
 }
 
 /*Main style*/
 main {
-   margin-left: 17rem;
-   max-width: 100vw;
+	margin: 3rem 3rem 0 19rem;
+	max-width: 100vw;
 }
 
-@media screen and (max-width: 768px) {
-   main {
-      margin: 5rem 0 0 0;
-   }
+.sections{
+   visibility: hidden;
+}
+
+.content .introduction {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+}
+
+.content .introduction img {
+	width: 500px;
 }
 
 .content {
-   display: flex;
-   flex-direction: column;
-   gap: 2rem;
-}
-
-.content h1 {
-   font-size: 3rem;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
 }
 
 .content section p {
-   font-size: 1.2rem;
+	font-size: 1.2rem;
 }
 
 .overlay {
-   position: fixed;
-   top: 0;
-   left: 0;
-   width: 100vw;
-   height: 100vh;
-   background: rgba(0, 0, 0, 0.66);
-   opacity: 0;
-   pointer-events: none;
-   transition: all 0.35s ease;
-   z-index: 80;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.66);
+	opacity: 0;
+	pointer-events: none;
+	transition: all 0.35s ease;
+	z-index: 80;
 }
+
 .overlay.show {
-   opacity: 1;
+	opacity: 1;
+}
+
+@media screen and (max-width: 1200px) {
+	.content .introduction img {
+		width: 350px;
+	}
+}
+
+@media screen and (max-width: 1050px) {
+	.content .introduction {
+      flex-direction: column;
+      justify-content: normal;
+   }
+   
+   .content .introduction img {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	main {
+		margin: 5rem 0 0 0;
+	}
 }
