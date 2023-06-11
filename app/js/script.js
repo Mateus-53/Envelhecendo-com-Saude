@@ -11,3 +11,5 @@ function updateProgressBar() {
    var progress = (scrollTop / documentHeight) * 100;
    document.querySelector(".scrollIndex").style.width = progress + "%";
 }
+
+console.log("its working")

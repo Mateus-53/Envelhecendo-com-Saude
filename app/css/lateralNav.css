@@ -5,7 +5,7 @@
    top: 0;
    left: 0;
    width: 100vw;
-   height: 70px;
+   height: 60px;
    display: flex;
    justify-content: space-between;
    background: none;
@@ -64,7 +64,7 @@
 
 @media screen and (max-width: 768px) {
    .scrollIndex {
-      top: 65px;
+      top: 55px;
       height: 5px;
       margin-left: 0;
    }
