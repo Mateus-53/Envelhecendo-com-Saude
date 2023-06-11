@@ -79,6 +79,7 @@
       left: -100%;
       box-shadow: none;
       transition: all 0.35s ease;
+      width: 15rem;
    }
    .lateralNav.opened {
       left: 0;
