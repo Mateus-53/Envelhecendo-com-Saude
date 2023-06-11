@@ -1,4 +1,3 @@
-alert(1)
 window.onscroll = function () {
    updateProgressBar();
 };
