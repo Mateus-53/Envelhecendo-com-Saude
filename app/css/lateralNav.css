@@ -11,7 +11,7 @@
    background: none;
    align-items: center;
    box-shadow: none;
-   z-index: 100;
+   z-index: 90;
    transition: all 0.15s ease;
 }
 .header.opened {
@@ -50,6 +50,25 @@
    }
 }
 /*Estilo do header final*/
+
+/*Começo da barra de scroll*/
+.scrollIndex {
+   position: fixed;
+   bottom: 1px;
+   margin-left: 17.01rem;
+   height: 5px;
+   width: 1px;
+   z-index: 100;
+   background: var(--primary-100);
+}
+
+@media screen and (max-width: 768px) {
+   .scrollIndex {
+      top: 65px;
+      height: 5px;
+      margin-left: 0;
+   }
+}
 
 /*Estilo do menu lateral inicio*/
 .lateralNav {
