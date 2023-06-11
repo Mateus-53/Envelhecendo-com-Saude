@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap");
+
 :root {
    --primary-100: #81c784;
    --primary-200: #64a968;
@@ -14,11 +16,13 @@
 body {
    scroll-behavior: smooth;
    background: var(--bg-100);
+   font-family: "Rubik", sans-serif;
 }
 
 /*Main style*/
 main {
    margin-left: 17rem;
+   max-width: 100vw;
 }
 
 @media screen and (max-width: 768px) {
