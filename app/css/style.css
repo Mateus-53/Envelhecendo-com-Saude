@@ -16,6 +16,7 @@ body {
    background: var(--bg-100);
 }
 
+/*Main style*/
 main {
    margin-left: 17rem;
 }
@@ -50,7 +51,7 @@ main {
    opacity: 0;
    pointer-events: none;
    transition: all 0.35s ease;
-   z-index: 9;
+   z-index: 80;
 }
 .overlay.show {
    opacity: 1;

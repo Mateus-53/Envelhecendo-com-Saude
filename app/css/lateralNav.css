@@ -1,5 +1,6 @@
 /*Estilo do header inicio*/
-.header {
+.header,
+.headerRoot {
    position: fixed;
    top: 0;
    left: 0;
@@ -17,6 +18,11 @@
    background: rgb(222, 235, 223, 0);
    box-shadow: none;
 }
+.headerRoot {
+   display: none;
+   z-index: 50;
+   background: rgb(222, 235, 223, 1) !important;
+}
 
 .logo {
    margin-left: 15px;
@@ -33,6 +39,10 @@
    .header {
       box-shadow: 1px 1px 10px #d0d0d0;
       background: var(--bg-200);
+   }
+
+   .headerRoot {
+      display: block;
    }
 
    .openMenu {
