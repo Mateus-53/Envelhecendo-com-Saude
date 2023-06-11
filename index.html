@@ -6,8 +6,15 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width,  initial-scale=1.0">
    <title>Velhice Website</title>
+   
+   <!--Bootstrap CDN-->
+   <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" type="text/css"
+      media="all" />
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
       type="text/css" media="all" />
+   
+   <!--Styles-->
    <link rel="stylesheet" href="./app/css/style.css" type="text/css" media="all" />
    <link rel="stylesheet" href="./app/css/lateralNav.css" type="text/css" media="all" />
    <link rel="stylesheet" href="./app/css/bootstrapEdit.css" type="text/css" media="all" />
@@ -15,8 +22,13 @@
 
 <body>
    <!--Menu lateral-->
-   <header class="lateralNav container">
-      <nav>
+   <header class="header">
+      <a class="logo" href="#">
+         LOGO
+      </a>
+      <i class="bi bi-list openMenu"></i>
+      
+      <nav class="lateralNav container">
          <!--Itens do menu-->
          <ul class="navItens list-unstyled">
             <li class="navItem">
@@ -48,7 +60,7 @@
       </nav>
    </header>
    <!--Final do menu lateral-->
-
+   
    <!--Conteudo principal-->
    <main>
       <!--Espaçamento do header-->
@@ -89,6 +101,14 @@
       </div>
    </main>
    <!--Final da tag main-->
+   
+   <!--Sombra ao abrir o menu lateral-->
+   <div class="overlay"></div>
+   
+   
+   <!--scrips links-->
+   <script src="./app/js/menuLateral.js"></script>
+   <script src="./app/js/script.js"></script>
 </body>
 
 </html>
