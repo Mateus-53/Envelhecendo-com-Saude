@@ -59,7 +59,7 @@
 	left: 0;
 	width: 17rem;
 	height: 100vh;
-	box-shadow: 1px 1px 10px #d0d0d0;
+	box-shadow: 1px 1px 10px #a7a7a7;
 }
 
 /*.lateralNav nav {
@@ -97,7 +97,7 @@
 
 @media screen and (max-width: 768px) {
 	.header {
-		box-shadow: 1px 1px 10px #d0d0d0;
+		box-shadow: 1px 1px 10px #a7a7a7;
 		background: var(--bg-200);
 	}
 
