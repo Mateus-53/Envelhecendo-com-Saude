@@ -26,6 +26,7 @@
 
 .logo {
 	margin-left: 15px;
+	width: 83px;
 }
 
 .openMenu {
@@ -98,6 +99,10 @@
 	.header {
 		box-shadow: 1px 1px 10px #d0d0d0;
 		background: var(--bg-200);
+	}
+	
+	.logo {
+	  z-index: 130;
 	}
 
 	.headerRoot {
