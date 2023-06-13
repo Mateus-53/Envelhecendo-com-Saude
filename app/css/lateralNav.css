@@ -28,7 +28,7 @@
    margin-left: 15px;
    width: 80px;
    display: flex;
-   z-index: 95;
+   z-index: 94;
    margin: 20px 0 0 15px;
 }
 
@@ -60,6 +60,7 @@
    position: fixed;
    top: 0;
    left: 0;
+   z-index: 95;
    width: 17rem;
    height: 100vh;
    box-shadow: 1px 1px 10px #a7a7a7;
