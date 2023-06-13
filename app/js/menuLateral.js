@@ -4,7 +4,20 @@ const overlay = document.querySelector(".overlay");
 const header = document.querySelector(".header");
 const scrollIndex = document.querySelector(".scrollIndex");
 
-btnMenu.addEventListener("click", function () {
+const menuElements = [btnMenu, overlay];
+
+menuElements.forEach((element) => {
+   element.addEventListener("click", function () {
+      lateralNav.classList.toggle("opened");
+      overlay.classList.toggle("show");
+      header.classList.toggle("opened");
+      scrollIndex.classList.toggle("opened");
+
+      console.log(overlay);
+   });
+});
+
+/*btnMenu.addEventListener("click", function () {
    lateralNav.classList.toggle("opened");
    overlay.classList.toggle("show");
    header.classList.toggle("opened");
@@ -12,3 +25,4 @@ btnMenu.addEventListener("click", function () {
 
    console.log(overlay);
 });
+*/

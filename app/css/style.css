@@ -93,6 +93,7 @@ main {
 
 .overlay.show {
 	opacity: 1;
+	pointer-events: auto;
 }
 
 @keyframes imageMoving {
