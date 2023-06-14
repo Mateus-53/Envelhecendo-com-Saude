@@ -62,17 +62,17 @@ footer .box:nth-child(4) {
    margin-bottom: 20px;
 }
 
-.box ul li {
-   margin: 10px 0px;
-   list-style: none;
+.box .lista {
+  display: flex;
+  flex-direction: column;
 }
 
-.box ul li a {
+.box .lista a {
    color: #f7fcf2;
    text-decoration: none;
 }
 
-.box ul li a:hover {
+.box .lista a:hover {
    color: #fff;
 }
 
