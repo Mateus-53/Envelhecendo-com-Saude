@@ -1,0 +1,14 @@
+@keyframes beatingHeart {
+   100% {
+      color: var(--heart);
+   }
+}
+
+@keyframes imageMoving {
+   0% {
+      transform: translateY(10px);
+   }
+   100% {
+      transform: translateY(-10px);
+   }
+}

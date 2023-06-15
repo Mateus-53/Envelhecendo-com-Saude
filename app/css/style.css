@@ -97,15 +97,6 @@ main {
    pointer-events: auto;
 }
 
-@keyframes imageMoving {
-   0% {
-      transform: translateY(10px);
-   }
-   100% {
-      transform: translateY(-10px);
-   }
-}
-
 @media screen and (max-width: 1200px) {
    .content .introduction img {
       width: 350px;
