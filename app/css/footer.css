@@ -1,0 +1,84 @@
+footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background: var(--primary-200);
+	margin-left: 17rem;
+	margin-top: 2rem;
+	padding: 2rem;
+	gap: 20px;
+}
+
+footer .box {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    text-align: center;
+	width: 100%;
+    gap: .5rem;
+}
+
+footer .box h2 {
+	color: var(--text-100);
+	font-size: 1.75rem;
+	font-weight: 600;
+    margin: 0;
+}
+
+footer .box h2 > a{
+    color: var(--text-100);
+}
+
+footer .box p.year{
+    font-size: 1rem;
+    margin: 0;
+}
+
+footer .box h2 > i {
+    animation: beatingHeart 1.5s infinite alternate;
+}
+
+footer .box .list{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .box .list a{
+    color: var(--bg-200);
+    font-size: 1rem;
+    transition: all .3s ease-in-out;
+}
+
+footer .box .list a:hover {
+    color: var(--bg-100);
+}
+
+footer .box:last-child .list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: .5rem;
+    padding: .5rem 1rem;
+    border-radius: 20px;
+    text-decoration: none;
+    background: var(--primary-300);
+}
+
+footer .box:last-child .list i{
+    font-size: 1.2rem;
+    color: var(--bg-100);
+}
+
+@keyframes beatingHeart {
+    100% {
+        color: var(--heart);
+    }
+}
+
+@media screen and (max-width: 950px) {
+	footer {
+		margin-left: 0;
+	}
+}
