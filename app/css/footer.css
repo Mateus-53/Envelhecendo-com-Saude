@@ -20,14 +20,14 @@ footer .box {
 }
 
 footer .box h2 {
-   color: var(--text-100);
+   color: #143d1b;
    font-size: 1.75rem;
    font-weight: 600;
    margin: 0;
 }
 
 footer .box h2 > a {
-   color: var(--primary-300);
+   color:#143d1b;
    text-decoration: underline;
 }
 
@@ -55,6 +55,7 @@ footer .box .list a {
 
 footer .box .list a:hover {
    color: var(--bg-100);
+   text-decoration: underline;
 }
 
 footer .box:last-child .list {
@@ -66,7 +67,7 @@ footer .box:last-child .list {
    padding: 0.5rem 1rem;
    border-radius: 20px;
    text-decoration: none;
-   background: var(--primary-300);
+   background: #20672c;
 }
 
 footer .box:last-child .list i {
@@ -74,7 +75,7 @@ footer .box:last-child .list i {
    color: var(--bg-100);
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
    footer {
       margin-left: 0;
    }
