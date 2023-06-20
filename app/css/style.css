@@ -79,23 +79,6 @@ main {
    transform: translateX(10px);
 }
 
-.overlay {
-   position: fixed;
-   top: 0;
-   left: 0;
-   width: 100vw;
-   height: 100vh;
-   background: rgba(0, 0, 0, 0.66);
-   opacity: 0;
-   pointer-events: none;
-   transition: all 0.35s ease;
-   z-index: 80;
-}
-
-.overlay.show {
-   opacity: 1;
-   pointer-events: auto;
-}
 
 @media screen and (max-width: 1200px) {
    .content .introduction img {
@@ -118,6 +101,24 @@ main {
    main {
       margin: 5rem 1rem 0 1rem;
    }
+   
+   .overlay {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100vw;
+   height: 100vh;
+   background: rgba(0, 0, 0, 0.66);
+   opacity: 0;
+   pointer-events: none;
+   transition: all 0.35s ease;
+   z-index: 80;
+}
+
+.overlay.show {
+   opacity: 1;
+   pointer-events: auto;
+}
 }
 
 

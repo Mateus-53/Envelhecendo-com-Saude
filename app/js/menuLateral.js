@@ -3,11 +3,10 @@ const lateralNav = document.querySelector(".lateralNav");
 const overlay = document.querySelector(".overlay");
 const header = document.querySelector(".header");
 const scrollIndex = document.querySelector(".scrollIndex");
+const menuElements = document.querySelectorAll(".menuEl");
 
-const menuElements = [btnMenu, overlay];
-
-menuElements.forEach((element) => {
-   element.addEventListener("click", function () {
+menuElements.forEach((menuElement) => {
+   menuElement.addEventListener("click", () => {
       lateralNav.classList.toggle("opened");
       overlay.classList.toggle("show");
       header.classList.toggle("opened");
@@ -16,13 +15,3 @@ menuElements.forEach((element) => {
       console.log(overlay);
    });
 });
-
-/*btnMenu.addEventListener("click", function () {
-   lateralNav.classList.toggle("opened");
-   overlay.classList.toggle("show");
-   header.classList.toggle("opened");
-   scrollIndex.classList.toggle("opened");
-
-   console.log(overlay);
-});
-*/
