@@ -77,27 +77,24 @@
 	margin-left: 10px;
 }
 
-.lateralNav li {
+.lateralNav li a {
 	display: flex;
 	align-items: center;
 	gap: 1rem;
-}
-
-.lateralNav li i {
-	font-size: 1.5rem;
-	border-radius: 50%;
-	color: var(--primary-200);
-}
-
-.lateralNav li a {
 	color: var(--text-200);
 	font-size: 1.2rem;
 	text-decoration: none;
 	transition: all 0.3s ease-in-out;
 }
 
-.lateralNav a:is(:hover, :focus, :active) {
+.lateralNav li a:is(:hover, :focus, :active){
+	transform: translateX(5px);
 	color: var(--text-100);
+}
+
+.lateralNav li a i {
+	font-size: 1.5rem;
+	color: var(--primary-200);
 }
 /*final do estilo do menu lateral */
 
