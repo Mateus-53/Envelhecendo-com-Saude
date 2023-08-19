@@ -16,6 +16,7 @@ body {
    scroll-behavior: smooth;
    background: var(--bg-100);
    font-family: "Rubik", sans-serif;
+   box-sizing: border-box !important;
 }
 
 /*Scroll*/
@@ -87,7 +88,7 @@ b {
 }
 
 #quiz-text a {
-  color: var(--primary-200);
+   color: var(--primary-200);
 }
 
 @media screen and (max-width: 1340px) {
