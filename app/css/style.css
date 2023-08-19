@@ -52,8 +52,9 @@ main {
    gap: 1rem;
 }
 
-.content .introduction img {
+.svgImages {
    width: 500px;
+   max-width: 100%;
    animation: imageMoving 2s infinite alternate;
    pointer-events: none;
 }
