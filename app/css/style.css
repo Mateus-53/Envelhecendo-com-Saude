@@ -38,6 +38,10 @@ main {
    max-width: 100vw;
 }
 
+b {
+   font-weight: 500;
+}
+
 .content {
    display: flex;
    flex-direction: column;
