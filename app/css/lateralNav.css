@@ -65,7 +65,7 @@
    z-index: 95;
    width: 17rem;
    height: 100vh;
-   box-shadow: 1px 1px 10px #a7a7a7;
+   /*box-shadow: 1px 1px 10px #a7a7a7;*/
 }
 
 /*.lateralNav nav {

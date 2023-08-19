@@ -3,13 +3,11 @@ window.onscroll = function () {
 };
 
 function updateProgressBar() {
-   var scrollTop =
+   let scrollTop =
       document.documentElement.scrollTop || document.body.scrollTop;
-   var documentHeight =
+   let documentHeight =
       document.documentElement.scrollHeight -
       document.documentElement.clientHeight;
-   var progress = (scrollTop / documentHeight) * 100;
+   let progress = (scrollTop / documentHeight) * 100;
    document.querySelector(".scrollIndex").style.width = progress + "%";
 }
-
-console.log("its working")
