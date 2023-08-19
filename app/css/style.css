@@ -86,6 +86,10 @@ b {
    transform: translateX(10px);
 }
 
+#quiz-text a {
+  color: var(--primary-200);
+}
+
 @media screen and (max-width: 1340px) {
    main {
       margin: 3rem 3rem 0 20rem;
