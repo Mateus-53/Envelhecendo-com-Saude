@@ -11,6 +11,37 @@ body {
    padding: 3.5rem 0;
 } */
 
+header {
+   height: 70px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   text-align: center;
+   margin-top: 3rem;
+}
+.progressBar {
+   position: relative;
+}
+.progressBar {
+   width: 100%;
+   height: 25px;
+   border-radius: 20px;
+   background: var(--bg-200);
+   position: relative;
+}
+.progressBarIndex {
+   width: 10%;
+   background: var(--accent-100);
+   height: 100%;
+   border-radius: 20px;
+   z-index: 10;
+   position: absolute;
+   left: 0;
+}
+.questionIndicator {
+   font-weight: 600;
+}
+
 .question-box {
    position: absolute;
    top: 50%;
@@ -23,7 +54,7 @@ body {
    justify-content: center;
    align-items: center;
    text-align: center;
-   height: 60vh;
+   height: 50vh;
    justify-content: space-between;
 }
 .question-box-content h4 {
