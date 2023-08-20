@@ -79,7 +79,7 @@ input[type="radio"] {
    vertical-align: middle;
    padding: 10px;
    background: var(--bg-200);
-   border-radius: 5px;
+   border-radius: 10px;
    transition: all 0.2s ease;
    box-shadow: 0px 4px 6px var(--bg-300);
 }
