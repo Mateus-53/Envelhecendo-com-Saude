@@ -74,9 +74,9 @@ input[type="radio"] {
 .option {
    min-width: 400px;
    display: flex;
-   align-items: center;
    justify-content: space-between;
    vertical-align: middle;
+   align-items: center;
    padding: 10px;
    background: var(--bg-200);
    border-radius: 10px;
