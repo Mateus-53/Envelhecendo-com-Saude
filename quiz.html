@@ -19,7 +19,7 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" type="text/css"
                                                                                                                            media="all" />
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" type="text/css"
-                                                                                                                           media="all" />
+                                                                                                               mqedia="all" />
    <!--Styles-->
    <link rel="stylesheet" href="./app/css/lateralNav.css" />
    <link rel="stylesheet" href="./app/css/bootstrapEdit.css" />
@@ -30,11 +30,14 @@
 </head>
 
 <body>
-   <span class="progressBar"></span>
-   <div class="container">
+   <div class="progressBar container">
+     <span class="progressBarTotal"></span> 
+     <span class="progressBarIndex"></span> 
+   </div>
+   <div class=" quizBox">
       <div class="question-box Q1 hide-box">
          <div class="question-box-content">
-            <h5>1. Qual é a diferença entre envelhecimento e velhice?</h5>
+            <h4>1. Qual é a diferença entre envelhecimento e velhice?</h4>
             <div class="alternativas">
                <div>
                   <input type="radio" class="r-input" id="1A" name="opcoes" />
@@ -68,10 +71,10 @@
       
       <div class="question-box Q2 hide-box">
          <div class="question-box-content">
-            <h5>
-               2. O que são algumas complicações que fazem parte do
+            <h4>
+               O que são algumas complicações que fazem parte do
                envelhecimento?
-            </h5>
+            </h4>
             <div class="alternativas">
                <div>
                   <input type="radio" class="r-input" id="2A" name="opcoes" />
@@ -100,9 +103,9 @@
       
       <div class="question-box Q3 hide-box">
          <div class="question-box-content">
-            <h5>
-               3. O que acontece durante o sono em relação ao envelhecimento?
-            </h5>
+            <h4>
+               O que acontece durante o sono em relação ao envelhecimento?
+            </h4>
             <div class="alternativas">
                <div>
                   <input type="radio" class="r-input" id="3A" name="opcoes" />
@@ -133,10 +136,10 @@
       
       <div class="question-box Q4 hide-box">
          <div class="question-box-content">
-            <h5>
-               4. Como as atividades físicas contribuem para o envelhecimento
+            <h4>
+               Como as atividades físicas contribuem para o envelhecimento
                saudável?
-            </h5>
+            </h4>
             <div class="alternativas">
                <div>
                   <input type="radio" class="r-input" id="4A" name="opcoes" />
@@ -167,7 +170,7 @@
       
       <div class="question-box Q5">
          <div class="question-box-content">
-            <h5>5. Quais são algumas consequências comuns da velhice?</h5>
+            <h4>Quais são algumas consequências comuns da velhice?</h4>
             <div class="alternativas">
                <div>
                   <input type="radio" class="r-input" id="5A" name="opcoes" />
