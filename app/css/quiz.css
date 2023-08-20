@@ -4,14 +4,17 @@ body {
    justify-content: center;
    align-items: center;
 }
-.quizBox {
+/* .quizBox {
    display: flex;
    position: relative;
    height: 92vh;
    padding: 3.5rem 0;
-}
+} */
 
 .question-box {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
 }
 
 .question-box-content {
@@ -20,11 +23,12 @@ body {
    justify-content: center;
    align-items: center;
    text-align: center;
+   height: 60vh;
+   justify-content: space-between;
 }
 .question-box-content h4 {
    max-width: 400px;
 }
-
 input[type="radio"] {
    appearance: none;
    -webkit-appearance: none;
@@ -53,9 +57,6 @@ input[type="radio"] {
    gap: 10px;
    max-width: 400px;
    margin: 0 auto;
-   top: 50%;
-   transform: translateY(-50%);
-   position: absolute;
 }
 
 .r-input {
@@ -81,6 +82,7 @@ input[type="radio"] {
    border-radius: 10px;
    transition: all 0.2s ease;
    box-shadow: 0px 4px 6px var(--bg-300);
+   cursor: pointer;
 }
 
 .next {
@@ -94,8 +96,6 @@ input[type="radio"] {
    border-radius: 5px;
    font-size: 1.2rem;
    font-weight: 500;
-   bottom: 3rem;
-   position: absolute;
 }
 
 .hide-box {
