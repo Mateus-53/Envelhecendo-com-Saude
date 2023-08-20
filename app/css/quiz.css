@@ -23,7 +23,7 @@ header {
    position: relative;
 }
 .progressBar {
-   width: 100%;
+   /* width: 100%; */
    height: 20px;
    border-radius: 20px;
    background: var(--bg-200);
@@ -46,7 +46,8 @@ header {
    display: flex;
    justify-content: center;
    position: relative;
-   margin: 50% auto;
+   margin: 0 auto;
+   transform: translateY(10%);
    width: 400px;
 }
 
@@ -56,7 +57,7 @@ header {
    justify-content: center;
    align-items: center;
    text-align: center;
-   height: 50vh;
+   height: 65vh;
    justify-content: space-between;
 }
 .question-box-content h4 {
@@ -108,7 +109,6 @@ input[type="radio"] {
 .option {
    min-width: 400px;
    display: flex;
-   justify-content: space-between;
    vertical-align: middle;
    align-items: center;
    padding: 10px;
@@ -118,9 +118,12 @@ input[type="radio"] {
    box-shadow: 0px 4px 6px var(--bg-300);
    cursor: pointer;
 }
+.option:not(span) {
+   text-align: left;
+}
 
 .next {
-   background: #81c784;
+   background: var(--accent-100);
    text-align: center;
    padding: 10px;
    width: 100%;
@@ -131,7 +134,25 @@ input[type="radio"] {
    font-size: 1.2rem;
    font-weight: 500;
 }
-
+.quizImage {
+   width: 100%;
+}
 .hide-box {
    display: none;
+}
+
+@media (max-width: 768px) {
+   header {
+      margin-top: 1rem;
+   }
+   .question-box {
+      padding: 0 1.2rem;
+      transform: translateY(0px);
+      height: calc(100vh - 100px);
+      margin-top: 5px;
+   }
+   .next {
+      position: absolute;
+      bottom: 5px;
+   }
 }

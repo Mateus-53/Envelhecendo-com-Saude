@@ -1,5 +1,6 @@
 // Pegando o indicador da questão atual
 const currentQuestion = document.querySelector(".currentQuestion");
+const progressBarIndex = document.querySelector(".progressBarIndex");
 
 // Pegando todas as questões
 const q1 = document.querySelector(".Q1");
@@ -44,141 +45,166 @@ let correctAnswers = 0;
 
 // Função que verifica se tem uma resposta selecionada
 const isAnyAnswerSelected = (answerElements) => {
-  return Array.from(answerElements).some(input => input.checked);
+   return Array.from(answerElements).some((input) => input.checked);
 };
 
 // Função que passa de uma questão para outra
 const moveToNextQuestion = (currentQuestionEl, nextQuestionEl) => {
-  currentQuestionEl.classList.add("hide-box");
-  nextQuestionEl.classList.remove("hide-box");
-  
-  const currentQuestionNum = parseInt(currentQuestion.innerHTML);
-  currentQuestion.innerHTML = (currentQuestionNum + 1).toString();
-}
+   currentQuestionEl.classList.add("hide-box");
+   nextQuestionEl.classList.remove("hide-box");
+
+   const currentQuestionNum = parseInt(currentQuestion.innerHTML);
+   currentQuestion.innerHTML = (currentQuestionNum + 1).toString();
+   progressBarIndex.style.width = `${(currentQuestionNum + 1) * 10}%`;
+};
 
 // Eventos
 next1.addEventListener("click", () => {
-  if (!isAnyAnswerSelected(answerQ1)) {
-    alert("Você precisa selecionar uma resposta para prosseguir!");
-    return;
-  }
-  
-  const selectedAnswer = Array.from(answerQ1).find(input => input.checked);
-  if (selectedAnswer.classList.contains("correct")) {
-    correctAnswers++;
-  }
-  
-  moveToNextQuestion(q1, q2);
+   if (!isAnyAnswerSelected(answerQ1)) {
+      alert("Você precisa selecionar uma resposta para prosseguir!");
+      return;
+   }
+
+   const selectedAnswer = Array.from(answerQ1).find((input) => input.checked);
+   if (selectedAnswer.classList.contains("correct")) {
+      correctAnswers++;
+   }
+
+   moveToNextQuestion(q1, q2);
 });
 
 next2.addEventListener("click", () => {
-  if (!isAnyAnswerSelected(answerQ2)) {
-    alert("Você precisa selecionar uma resposta para prosseguir");
-    return;
-  }
-  
-  const selectedAnswer = Array.from(answerQ2).find(input => input.checked);
-  if (selectedAnswer.classList.contains("correct")) {
-    correctAnswers++;
-  }
-  
-  moveToNextQuestion(q2, q3);
+   if (!isAnyAnswerSelected(answerQ2)) {
+      alert("Você precisa selecionar uma resposta para prosseguir");
+      return;
+   }
+
+   const selectedAnswer = Array.from(answerQ2).find((input) => input.checked);
+   if (selectedAnswer.classList.contains("correct")) {
+      correctAnswers++;
+   }
+
+   moveToNextQuestion(q2, q3);
 });
 
 next3.addEventListener("click", () => {
-  if (!isAnyAnswerSelected(answerQ3)) {
-    alert("Você precisa selecionar uma resposta para prosseguir");
-    return;
-  }
-  
-  const selectedAnswer = Array.from(answerQ3).find(input => input.checked);
-  if (selectedAnswer.classList.contains("correct")) {
-    correctAnswers++;
-  }
-  
-  moveToNextQuestion(q3, q4);
+   if (!isAnyAnswerSelected(answerQ3)) {
+      alert("Você precisa selecionar uma resposta para prosseguir");
+      return;
+   }
+
+   const selectedAnswer = Array.from(answerQ3).find((input) => input.checked);
+   if (selectedAnswer.classList.contains("correct")) {
+      correctAnswers++;
+   }
+
+   moveToNextQuestion(q3, q4);
 });
 
 next4.addEventListener("click", () => {
-  if (!isAnyAnswerSelected(answerQ4)) {
-    alert("Você precisa selecionar uma resposta para prosseguir");
-    return;
-  }
-  
-  const selectedAnswer = Array.from(answerQ4).find(input => input.checked);
-  if (selectedAnswer.classList.contains("correct")) {
-    correctAnswers++;
-  }
-  
-  moveToNextQuestion(q4, q5);
+   if (!isAnyAnswerSelected(answerQ4)) {
+      alert("Você precisa selecionar uma resposta para prosseguir");
+      return;
+   }
+
+   const selectedAnswer = Array.from(answerQ4).find((input) => input.checked);
+   if (selectedAnswer.classList.contains("correct")) {
+      correctAnswers++;
+   }
+
+   moveToNextQuestion(q4, q5);
 });
 
 next5.addEventListener("click", () => {
-  if (!isAnyAnswerSelected(answerQ5)) {
-    alert("Você precisa selecionar uma resposta para prosseguir");
-    return;
-  }
-  
-  const selectedAnswer = Array.from(answerQ5).find(input => input.checked);
-  if (selectedAnswer.classList.contains("correct")) {
-    correctAnswers++;
-  }
-  
-  moveToNextQuestion(q5, q6);
+   if (!isAnyAnswerSelected(answerQ5)) {
+      alert("Você precisa selecionar uma resposta para prosseguir");
+      return;
+   }
+
+   const selectedAnswer = Array.from(answerQ5).find((input) => input.checked);
+   if (selectedAnswer.classList.contains("correct")) {
+      correctAnswers++;
+   }
+
+   moveToNextQuestion(q5, q6);
 });
 
 next6.addEventListener("click", () => {
-  if (!isAnyAnswerSelected(answerQ6)) {
-    alert("Você precisa selecionar uma resposta para prosseguir");
-    return;
-  }
-  
-  const selectedAnswer = Array.from(answerQ6).find(input => input.checked);
-  if (selectedAnswer.classList.contains("correct")) {
-    correctAnswers++;
-  }
-  
-  moveToNextQuestion(q6, q7);
+   if (!isAnyAnswerSelected(answerQ6)) {
+      alert("Você precisa selecionar uma resposta para prosseguir");
+      return;
+   }
+
+   const selectedAnswer = Array.from(answerQ6).find((input) => input.checked);
+   if (selectedAnswer.classList.contains("correct")) {
+      correctAnswers++;
+   }
+
+   moveToNextQuestion(q6, q7);
 });
 
 next7.addEventListener("click", () => {
-  if (!isAnyAnswerSelected(answerQ7)) {
-    alert("Você precisa selecionar uma resposta para prosseguir");
-    return;
-  }
-  
-  const selectedAnswer = Array.from(answerQ7).find(input => input.checked);
-  if (selectedAnswer.classList.contains("correct")) {
-    correctAnswers++;
-  }
-  
-  moveToNextQuestion(q7, q8);
+   if (!isAnyAnswerSelected(answerQ7)) {
+      alert("Você precisa selecionar uma resposta para prosseguir");
+      return;
+   }
+
+   const selectedAnswer = Array.from(answerQ7).find((input) => input.checked);
+   if (selectedAnswer.classList.contains("correct")) {
+      correctAnswers++;
+   }
+
+   moveToNextQuestion(q7, q8);
 });
 
 next8.addEventListener("click", () => {
-  if (!isAnyAnswerSelected(answerQ8)) {
-    alert("Você precisa selecionar uma resposta para prosseguir");
-    return;
-  }
-  
-  const selectedAnswer = Array.from(answerQ8).find(input => input.checked);
-  if (selectedAnswer.classList.contains("correct")) {
-    correctAnswers++;
-  }
-  
-  moveToNextQuestion(q8, q9);
+   if (!isAnyAnswerSelected(answerQ8)) {
+      alert("Você precisa selecionar uma resposta para prosseguir");
+      return;
+   }
+
+   const selectedAnswer = Array.from(answerQ8).find((input) => input.checked);
+   if (selectedAnswer.classList.contains("correct")) {
+      correctAnswers++;
+   }
+
+   moveToNextQuestion(q8, q9);
 });
 
 next9.addEventListener("click", () => {
-  if (!isAnyAnswerSelected(answerQ9)) {
-    alert("Você precisa selecionar uma resposta para prosseguir");
-    return;
-  }
-  
-  const selectedAnswer = Array.from(answerQ9).find(input => input.checked);
-  if (selectedAnswer.classList.contains("correct")) {
-    correctAnswers++;
-  }
-  
-  moveToNextQuestion(q9, q10);
+   if (!isAnyAnswerSelected(answerQ9)) {
+      alert("Você precisa selecionar uma resposta para prosseguir");
+      return;
+   }
+
+   const selectedAnswer = Array.from(answerQ9).find((input) => input.checked);
+   if (selectedAnswer.classList.contains("correct")) {
+      correctAnswers++;
+   }
+
+   moveToNextQuestion(q9, q10);
+});
+
+finish.addEventListener("click", () => {
+   let finishMessage, img;
+
+   if (correctAnswers <= 2) {
+      finishMessage = `Você acertou ${correctAnswers}/10 👎. Apenas melhore.`;
+      img = "1.png";
+   } else if (correctAnswers > 2 && correctAnswers <= 6) {
+      finishMessage = `Você acertou ${correctAnswers}/10 🤣. Se esforçe mais.`;
+      img = "2.png";
+   } else if (correctAnswers > 6 && correctAnswers <= 9) {
+      finishMessage = `Você acertou ${correctAnswers}/10 👍. Você quase conseguiu.`;
+      img = "3.png";
+   } else {
+      finishMessage = `Você acertou ${correctAnswers}/10 😎🤙. Parabéns, você é perfeito (a).`;
+      img = "4.png";
+   }
+
+   q10.classList.add("hide-box");
+   document.querySelector(".finishScreen").classList.remove("hide-box");
+   document.querySelector(".finishMessage").innerHTML = finishMessage;
+   document.querySelector(".questionIndicator").innerHTML = "Finalizado!";
+   document.querySelector(".quizImage").src = `./app/img/quiz/${img}`;
 });
