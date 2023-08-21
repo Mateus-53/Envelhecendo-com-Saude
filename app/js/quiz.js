@@ -40,6 +40,9 @@ const next9 = document.querySelector(".n9");
 // Pegando o botão de finalizar
 const finish = document.querySelector(".finish");
 
+//Pegando o botão de refazer o quiz
+const reload = document.querySelector(".reloadQuiz");
+
 // Questões certas
 let correctAnswers = 0;
 
@@ -186,6 +189,16 @@ next9.addEventListener("click", () => {
 });
 
 finish.addEventListener("click", () => {
+  if (!isAnyAnswerSelected(answerQ10)) {
+    alert("Você precisa selecionar uma resposta para prosseguir");
+    return;
+  }
+  
+  const selectedAnswer = Array.from(answerQ10).find((input) => input.checked);
+  if (selectedAnswer.classList.contains("correct")) {
+    correctAnswers++;
+  }
+  
    let finishMessage, img;
 
    if (correctAnswers <= 2) {
@@ -208,3 +221,7 @@ finish.addEventListener("click", () => {
    document.querySelector(".questionIndicator").innerHTML = "Finalizado!";
    document.querySelector(".quizImage").src = `./app/img/quiz/${img}`;
 });
+
+reload.addEventListener("click", () => {
+  location.reload();
+})

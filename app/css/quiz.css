@@ -152,7 +152,7 @@ input[type="radio"] {
       margin-top: 5px;
    }
    .next {
-      position: absolute;
+     /*position: absolute;*/
       bottom: 5px;
    }
 }
