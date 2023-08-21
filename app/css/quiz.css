@@ -144,15 +144,28 @@ input[type="radio"] {
 @media (max-width: 768px) {
    header {
       margin-top: 1rem;
+      height: 42px;
+   }
+   .progressBar {
+      height: 14px;
    }
    .question-box {
       padding: 0 1.2rem;
       transform: translateY(0px);
-      height: calc(100vh - 100px);
+      height: auto;
       margin-top: 5px;
+      width: 100vw;
+   }
+   .question-box-content h5 {
+      font-size: 1.1rem;
+   }
+   .option {
+      min-width: 100%;
+      width: 100%;
+      font-size: 0.9rem;
    }
    .next {
-     /*position: absolute;*/
+      /*position: absolute;*/
       bottom: 5px;
    }
 }
