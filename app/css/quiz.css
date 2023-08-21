@@ -150,11 +150,11 @@ input[type="radio"] {
       height: 14px;
    }
    .question-box {
-      padding: 0 1.2rem;
       transform: translateY(0px);
       height: auto;
       margin-top: 5px;
       width: 100vw;
+      padding: 0 0.9rem;
    }
    .question-box-content h5 {
       font-size: 1.1rem;
@@ -163,6 +163,9 @@ input[type="radio"] {
       min-width: 100%;
       width: 100%;
       font-size: 0.9rem;
+   }
+   .alternativas div {
+      width: 100%;
    }
    .next {
       /*position: absolute;*/

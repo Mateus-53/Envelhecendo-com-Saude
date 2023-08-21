@@ -208,7 +208,7 @@ finish.addEventListener("click", () => {
       finishMessage = `Você acertou ${correctAnswers}/10 🤣. Se esforçe mais.`;
       img = "2.png";
    } else if (correctAnswers > 6 && correctAnswers <= 9) {
-      finishMessage = `Você acertou ${correctAnswers}/10 👍. Você quase conseguiu.`;
+      finishMessage = `Você acertou ${correctAnswers}/10 👍. Boa quase lá.`;
       img = "3.png";
    } else {
       finishMessage = `Você acertou ${correctAnswers}/10 😎🤙. Parabéns, você é perfeito (a).`;
