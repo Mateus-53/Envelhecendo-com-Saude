@@ -162,13 +162,9 @@ input[type="radio"] {
    .option {
       min-width: 100%;
       width: 100%;
-      font-size: 0.9rem;
+      font-size: 1.05rem;
    }
    .alternativas div {
       width: 100%;
-   }
-   .next {
-      /*position: absolute;*/
-      bottom: 5px;
    }
 }
