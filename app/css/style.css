@@ -10,6 +10,7 @@
    --bg-200: #deebdf;
    --bg-300: #b6c2b7;
    --heart: #c31a1a;
+   --wrong: #f0d8d3;
 }
 
 body {
@@ -65,7 +66,7 @@ b {
 }
 
 .content .sections {
-   visibility: hidden;
+   /*visibility: hidden;*/
    scroll-margin-top: 4.5rem;
 }
 

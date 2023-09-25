@@ -75,6 +75,10 @@ footer .box:last-child .list i {
    color: var(--bg-100);
 }
 
+.eplogo {
+  width: 50px;
+}
+
 @media screen and (max-width: 768px) {
    footer {
       margin-left: 0;

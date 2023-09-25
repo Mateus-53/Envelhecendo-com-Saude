@@ -1,0 +1,66 @@
+.config-zone {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(3, 3, 3, 0.5);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.config-area {
+  position: relative;
+  background: #deebdf;
+  padding: 40px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.range-area {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  height: 10px;
+  background: #81c784;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #81c784;
+  border: none;
+  border-radius: 50%;
+}
+
+#config-title {
+  color: #81c784;
+}
+
+.close-config {
+  position: absolute;
+  color: rgba(3, 3, 3, 0.3);
+  font-size: 1.5rem;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.config-header {
+  display: flex;
+}
+
+.config-closed {
+  display: none;
+}
