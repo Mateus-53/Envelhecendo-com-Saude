@@ -6,7 +6,7 @@
 
 ##
 
-![Envelhecendo com saude website image](https://envelhecendo-com-saude.vercel.app/app/img/img_ecs.png)
+![Envelhecendo com saude website image](/app/img/img_ecs.png)
 
 # Contribuidores
 
